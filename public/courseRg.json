@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "https://example.com/programming-course-1.jpg",
+    "img": "https://i.ibb.co/T0g9D7r/Rectangle-2-2.png",
     "course_name": "Python Programming for Beginners",
     "credit": 2,
     "course_price": 17750,
@@ -9,64 +9,64 @@
   },
   {
     "id": 2,
-    "img": "https://example.com/programming-course-2.jpg",
-    "course_name": "Java Programming for Beginners",
+    "img": "https://i.ibb.co/k20Bz6p/Rectangle-2-3.png",
+    "course_name": "Introduction to Algorithms",
     "credit": 3,
     "course_price": 8750,
-    "course_details": "Learn the basics of Java programming, including variables, data types, functions, loops, and control flow."
+    "course_details": "Learn the basics of C++ programming, including variables, data types, functions, loops, and control flow."
   },
   {
     "id": 3,
-    "img": "https://example.com/programming-course-3.jpg",
-    "course_name": "Web Development with JavaScript and HTML/CSS",
+    "img": "https://i.ibb.co/vc2GH4v/Rectangle-2-4.png",
+    "course_name": "Introduction to C++ for DSA",
     "credit": 1,
     "course_price": 5500,
-    "course_details": "Learn how to build web applications using JavaScript and HTML/CSS."
+    "course_details": "Learn how to build web applications using JavaScript and HTML/CSS. Learn how to build web applications using JavaScript and HTML/CSS."
   },
   {
     "id": 4,
-    "img": "https://example.com/programming-course-4.jpg",
-    "course_name": "Data Structures and Algorithms",
+    "img": "https://i.ibb.co/nBtgQ1F/Rectangle-3.png",
+    "course_name": "Basic Data Structures",
     "credit": 5,
     "course_price": 4000,
     "course_details": "Learn the fundamentals of data structures and algorithms, including arrays, linked lists, stacks, queues, trees, and graphs."
   },
   {
     "id": 5,
-    "img": "https://example.com/programming-course-5.jpg",
-    "course_name": "Object-Oriented Programming",
-    "credit": 7,
+    "img": "https://i.ibb.co/gmSL7hj/Rectangle-2.png",
+    "course_name": "Introduction to OOP Python",
+    "credit": 2,
     "course_price": 8000,
     "course_details": "Learn the concepts of object-oriented programming, such as classes, objects, inheritance, and polymorphism."
   },
   {
     "id": 6,
-    "img": "https://example.com/programming-course-6.jpg",
+    "img": "https://i.ibb.co/q1txQqh/Rectangle-2-5.png",
     "course_name": "Software Engineering",
-    "credit": 9,
+    "credit": 5,
     "course_price": 7500,
-    "course_details": "Learn the principles of software engineering, such as software design, testing, and deployment."
+    "course_details": "Learn the principles of software engineering, such as software design, testing, and deployment. testing, and deployment."
   },
   {
     "id": 7,
-    "img": "https://example.com/programming-course-7.jpg",
-    "course_name": "Machine Learning",
-    "credit": 8,
+    "img": "https://i.ibb.co/gmv1fgN/Rectangle-3-1.png",
+    "course_name": "AWS, Cloud Computing",
+    "credit": 2,
     "course_price": 12000,
     "course_details": "Learn the fundamentals of machine learning, including supervised learning, unsupervised learning, and reinforcement learning."
   },
   {
     "id": 8,
-    "img": "https://example.com/programming-course-8.jpg",
-    "course_name": "Artificial Intelligence",
-    "credit": 4,
+    "img": "https://i.ibb.co/Q8bSvm0/Rectangle-2-1.png",
+    "course_name": "Database (MySQL)",
+    "credit": 3,
     "course_price": 15000,
     "course_details": "Learn the fundamentals of artificial intelligence, including search algorithms, logic, and knowledge representation."
   },
   {
     "id": 9,
-    "img": "https://example.com/programming-course-9.jpg",
-    "course_name": "Blockchain Programming",
+    "img": "https://i.ibb.co/P4qPcGv/Rectangle-2-6.png",
+    "course_name": "Problem-Solving Part",
     "credit": 6,
     "course_price": 11500,
     "course_details": "Learn the fundamentals of blockchain programming, including smart contracts and decentralized applications."
