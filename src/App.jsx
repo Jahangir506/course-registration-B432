@@ -8,10 +8,13 @@ import Header from "./components/Header/Header";
 
 function App() {
   const [addCourseDetails, setAddCourseDetails] = useState([]);
-  let [credit, setCredit] = useState()
+  const [credit, setCredit] = useState(0)
+  const [totalPrice , setTotalPrice] = useState(0)
+
 
   const handleToSelectCourse = (course) => {
     let sum = course.credit
+    let sumTotalPrice = course.course_price
     
     const isExist = addCourseDetails.find(itemId => itemId.id === course.id)
     if(isExist){
@@ -22,8 +25,17 @@ function App() {
     else{
       addCourseDetails.forEach(courseCredit => {
           sum += courseCredit.credit
+          sumTotalPrice += courseCredit.course_price
       })
+     if(sum >= 20){
+      toast('You cannot take more than 20 course credits', {
+        position:"top-center",
+        theme:"colored"
+       })
+     }else{
       setCredit(sum)
+      setTotalPrice(sumTotalPrice)
+     }
       setAddCourseDetails([...addCourseDetails, course])
     }
 
@@ -40,6 +52,7 @@ function App() {
           <Cart
            addCourseDetails={addCourseDetails}
            credit = {credit}
+           totalPrice = {totalPrice}
           ></Cart>
           <ToastContainer />
         </div>

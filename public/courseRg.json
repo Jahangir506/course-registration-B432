@@ -4,7 +4,7 @@
     "img": "https://i.ibb.co/T0g9D7r/Rectangle-2-2.png",
     "course_name": "Python Programming for Beginners",
     "credit": 2,
-    "course_price": 17750,
+    "course_price": 1500,
     "course_details": "Learn the basics of Python programming, including variables, data types, functions, loops, and control flow."
   },
   {
@@ -12,7 +12,7 @@
     "img": "https://i.ibb.co/k20Bz6p/Rectangle-2-3.png",
     "course_name": "Introduction to Algorithms",
     "credit": 3,
-    "course_price": 8750,
+    "course_price": 4100,
     "course_details": "Learn the basics of C++ programming, including variables, data types, functions, loops, and control flow."
   },
   {
@@ -28,7 +28,7 @@
     "img": "https://i.ibb.co/nBtgQ1F/Rectangle-3.png",
     "course_name": "Basic Data Structures",
     "credit": 5,
-    "course_price": 4000,
+    "course_price": 5400,
     "course_details": "Learn the fundamentals of data structures and algorithms, including arrays, linked lists, stacks, queues, trees, and graphs."
   },
   {
@@ -52,7 +52,7 @@
     "img": "https://i.ibb.co/gmv1fgN/Rectangle-3-1.png",
     "course_name": "AWS, Cloud Computing",
     "credit": 2,
-    "course_price": 12000,
+    "course_price": 1100,
     "course_details": "Learn the fundamentals of machine learning, including supervised learning, unsupervised learning, and reinforcement learning."
   },
   {
@@ -60,7 +60,7 @@
     "img": "https://i.ibb.co/Q8bSvm0/Rectangle-2-1.png",
     "course_name": "Database (MySQL)",
     "credit": 3,
-    "course_price": 15000,
+    "course_price": 1000,
     "course_details": "Learn the fundamentals of artificial intelligence, including search algorithms, logic, and knowledge representation."
   },
   {
@@ -68,7 +68,7 @@
     "img": "https://i.ibb.co/P4qPcGv/Rectangle-2-6.png",
     "course_name": "Problem-Solving Part",
     "credit": 6,
-    "course_price": 11500,
+    "course_price": 1550,
     "course_details": "Learn the fundamentals of blockchain programming, including smart contracts and decentralized applications."
   }
 ]
