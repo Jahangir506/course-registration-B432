@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FaBookOpen, FaDollarSign } from "react-icons/fa";
 
 const CourseCard = ({ courseCard }) => {
@@ -5,7 +6,7 @@ const CourseCard = ({ courseCard }) => {
 
   return (
     <div>
-      <div className="card w-80 bg-base-100">
+      <div className="card w-80 bg-base-100 duration-[.3s] hover:translate-y-[-4px] ">
         <figure className="p-4">
           <img src={img} alt="Shoes" className="rounded-xl" />
         </figure>
@@ -32,5 +33,9 @@ const CourseCard = ({ courseCard }) => {
     </div>
   );
 };
+
+CourseCard.propTypes = {
+  courseCard: PropTypes.object.isRequired
+}
 
 export default CourseCard;

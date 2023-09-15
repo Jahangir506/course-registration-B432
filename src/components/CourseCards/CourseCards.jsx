@@ -12,7 +12,7 @@ const CourseCards = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-8 w-4/3 mx-auto">
+      <div className="grid grid-cols-3 gap-8 w-4/3 mx-auto ">
         {courseCards.map((courseCard) => (
           <CourseCard key={courseCard.id} courseCard={courseCard}></CourseCard>
         ))}
