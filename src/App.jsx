@@ -12,15 +12,13 @@ function App() {
   const [totalPrice , setTotalPrice] = useState(0)
   const [remaining, setRemaining] = useState(0)
 
-  console.log(credit);
-
   const handleToSelectCourse = (course) => {
     let sum = course.credit
     let sumTotalPrice = course.course_price
 
     const isExist = addCourseDetails.find(itemId => itemId.id === course.id)
     if(isExist){
-     toast('Already selected, cannot select again', {
+     toast('👉 This item is already selected.', {
       position:"top-center",
      })
     }
@@ -29,17 +27,17 @@ function App() {
           sum += courseCredit.credit
           sumTotalPrice += courseCredit.course_price
       })
-     if(sum > 20){
-      toast('You cannot take more than 20 course credits', {
+      let remainingCredit = 20 - sum
+     if(sum > 20 || remainingCredit < 0){
+      toast('🤨Oops! No more than twenty credits may be taken and Your Remaining Credit hours zero.', {
         position:"top-center",
         theme:"colored"
        })
      }else{
-      
       setCredit(sum)
       setTotalPrice(sumTotalPrice)
+      setRemaining(remainingCredit)
      }
-     setRemaining(20 - sum)
       setAddCourseDetails([...addCourseDetails, course])
     }
 
