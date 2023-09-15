@@ -1,4 +1,6 @@
-import { useState } from "react";
+import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Cart from "./components/Cart/Cart";
 import CourseCards from "./components/CourseCards/CourseCards";
@@ -8,7 +10,17 @@ function App() {
   const [addCourseDetails, setAddCourseDetails] = useState([]);
 
   const handleToSelectCourse = (course) => {
-    setAddCourseDetails([...addCourseDetails, course])
+    console.log(course);
+    const isExist = addCourseDetails.find(itemId => itemId.id === course.id)
+    
+    if(isExist){
+     toast('Already selected, cannot select again', {
+      position:"top-center"
+     })
+    }
+    else{
+      setAddCourseDetails([...addCourseDetails, course])
+    }
     
   };
   return (
@@ -22,6 +34,7 @@ function App() {
           <Cart
            addCourseDetails={addCourseDetails}
           ></Cart>
+          <ToastContainer />
         </div>
       </div>
     </>

@@ -11,8 +11,8 @@ const Cart = ({ addCourseDetails }) => {
             </h3>
             <div>
               <h3 className="font-bold mb-3">Course Name</h3>
-              {addCourseDetails.map((addCourseDetail, idx) => (
-               <div key={addCourseDetail.id} className="my-2">
+              {addCourseDetails.forEach((addCourseDetail, idx) => (
+               <div key={idx} className="my-2">
                    <p className="text-sm"> {++idx}.<span className='ml-1'>{addCourseDetail.course_name}</span></p>
                </div>
               ))}
@@ -27,7 +27,7 @@ const Cart = ({ addCourseDetails }) => {
 };
 
 Cart.propTypes = {
-  addCourseDetails: PropTypes.object.isRequired
+  addCourseDetails: PropTypes.array.isRequired
 }
 
 export default Cart;
