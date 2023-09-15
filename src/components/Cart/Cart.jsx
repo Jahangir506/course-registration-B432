@@ -11,9 +11,9 @@ const Cart = ({ addCourseDetails }) => {
             </h3>
             <div>
               <h3 className="font-bold mb-3">Course Name</h3>
-              {addCourseDetails.map((addCourseDetail) => (
-               <div key={addCourseDetail.id} className="my-1">
-                 <p className="text-sm">{addCourseDetail.course_name}</p>
+              {addCourseDetails.map((addCourseDetail, idx) => (
+               <div key={addCourseDetail.id} className="my-2">
+                   <p className="text-sm"> {++idx}.<span className='ml-1'>{addCourseDetail.course_name}</span></p>
                </div>
               ))}
             </div>
