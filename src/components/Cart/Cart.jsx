@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Cart = ({ addCourseDetails }) => {
+const Cart = ({ addCourseDetails, credit }) => {
+
   return (
     <div>
       <div className="w-4/1 mx-auto ml-8">
@@ -11,13 +12,13 @@ const Cart = ({ addCourseDetails }) => {
             </h3>
             <div>
               <h3 className="font-bold mb-3">Course Name</h3>
-              {addCourseDetails.forEach((addCourseDetail, idx) => (
+              {addCourseDetails.map((addCourseDetail, idx) => (
                <div key={idx} className="my-2">
                    <p className="text-sm"> {++idx}.<span className='ml-1'>{addCourseDetail.course_name}</span></p>
                </div>
               ))}
             </div>
-            <h1 className="font-medium border-t-2 border-b-2 py-3 mt-3 mb-2">Total Credit Hour: 13</h1>
+            <h1 className="font-medium border-t-2 border-b-2 py-3 mt-3 mb-2">Total Credit Hour: {credit}</h1>
             <h1 className="font-medium">Total Price: USD</h1>
           </div>
         </div>
@@ -27,7 +28,8 @@ const Cart = ({ addCourseDetails }) => {
 };
 
 Cart.propTypes = {
-  addCourseDetails: PropTypes.array.isRequired
+  addCourseDetails: PropTypes.array.isRequired,
+  credit: PropTypes.number
 }
 
 export default Cart;

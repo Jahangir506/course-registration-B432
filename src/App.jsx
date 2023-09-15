@@ -8,21 +8,27 @@ import Header from "./components/Header/Header";
 
 function App() {
   const [addCourseDetails, setAddCourseDetails] = useState([]);
+  let [credit, setCredit] = useState()
 
   const handleToSelectCourse = (course) => {
-    console.log(course);
-    const isExist = addCourseDetails.find(itemId => itemId.id === course.id)
+    let sum = course.credit
     
+    const isExist = addCourseDetails.find(itemId => itemId.id === course.id)
     if(isExist){
      toast('Already selected, cannot select again', {
-      position:"top-center"
+      position:"top-center",
      })
     }
     else{
+      addCourseDetails.forEach(courseCredit => {
+          sum += courseCredit.credit
+      })
+      setCredit(sum)
       setAddCourseDetails([...addCourseDetails, course])
     }
-    
+
   };
+
   return (
     <>
       <div className="bg-gray-100 py-8">
@@ -33,6 +39,7 @@ function App() {
           ></CourseCards>
           <Cart
            addCourseDetails={addCourseDetails}
+           credit = {credit}
           ></Cart>
           <ToastContainer />
         </div>

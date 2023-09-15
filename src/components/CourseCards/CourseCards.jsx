@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import CourseCard from "../CourseCard/CourseCard";
 
@@ -23,5 +24,10 @@ const CourseCards = ({handleToSelectCourse}) => {
     </>
   );
 };
+
+
+CourseCards.propTypes = {
+  handleToSelectCourse: PropTypes.func.isRequired
+}
 
 export default CourseCards;
