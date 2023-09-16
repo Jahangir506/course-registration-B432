@@ -17,6 +17,7 @@ function App() {
     let sumTotalPrice = course.course_price
 
     const isExist = addCourseDetails.find(itemId => itemId.id === course.id)
+    
     if(isExist){
      toast('👉 This item is already selected.', {
       position:"top-center",
